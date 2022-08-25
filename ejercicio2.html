@@ -5,6 +5,40 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+
+    const isNumber = function (element) {
+        return Number.isFinite(parseFloat(element));
+    };
+
+    const inicio=['unacadena',3,9,1,10,500,1,10,true];
+
+    for (let i = 0; i < inicio.length; i++) {
+        for (let j = i + 1; j < inicio.length; j++) {
+            if (inicio[i] > inicio[j]) {
+                temp = inicio[i];
+                inicio[i] = inicio[j];
+                inicio[j] = temp;
+            }
+        }
+    }
+
+    const numeros = inicio.filter(isNumber);
+    console.log(numeros); // ordenar
+
+//
+
+
+
+
+
+
+
+
+
+</script>
+
+
 
 </body>
 </html>
